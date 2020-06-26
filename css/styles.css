@@ -1,0 +1,375 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #431d8c;
+    color: whitesmoke;
+    font-size: 18px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+h2 {
+    font-weight: 500;
+    font-size: 30px;
+}
+/* Header */
+#menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.navbar-light .navbar-brand {
+    font-weight: bold;
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+}
+.navbar-light .navbar-brand:hover {
+    color: whitesmoke;
+}
+.nav-color {
+    background-color: #3b56a2;
+   
+}
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    transition: ease-out 0.35s;
+    
+}
+.sr-only {
+    color: whitesmoke;
+}
+.navbar-toggler-icon {
+    color: whitesmoke;
+    border: none;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    font-weight: 600;
+    color: whitesmoke;
+    
+}
+.navbar-light .navbar-nav .active>.nav-link {
+ color: whitesmoke;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: whitesmoke;
+
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(209, 220, 230, 0.747);
+}
+
+/* Main elements ------------------------------------------------------------------------------------------------------------------------------------*/
+#main_elements div {
+    max-width: 1000px;
+    margin: 0 auto;
+    
+}
+
+/* SECTION ----------------------------- */
+/* Welcome Section --------------------------------*/
+#welcome_section div {
+    padding: 140px 20px 80px;
+}
+#welcome_section h1 {
+    font-size: 46px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    font-weight: 800;
+}
+#welcome_section hr {
+    color: white;
+    border: 2px solid #d45b63;
+    max-width: 830px;
+}
+#welcome_section h2 {
+    text-align: center;
+}
+
+/* CEO section */
+.jumbotron {
+    background-color: #272c33;
+    border-radius: 0%;
+    border: transparent;
+}
+#ceo_section div {
+    padding: 20px 20px;
+}
+#ceo_section div.container {
+    height: 10em;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+#ceo_section h3 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+/* FEATURES ----------*/
+
+#features div {
+    padding: 10px 20px;
+}
+#features h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+#features .icons {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+}
+#features .icons i {
+    display: block; 
+    font-size: 56px;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/* Clients -------------------------*/
+#clients div {
+    padding: 10px 20px;
+}
+#clients h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+    /* ticker ------------------ */
+    /* OUTER CONTAINER */
+.tcontainer {
+    width: 100%;
+    overflow: hidden; /* Hide scroll bar */
+  }
+   
+  /* MIDDLE CONTAINER */
+  .ticker-wrap {
+    box-sizing: content-box;
+    white-space: nowrap;
+    width: 100%;
+    padding-left: 100%; /* Push contents to right side of screen */
+    
+  }
+  
+  /* INNER CONTAINER */
+  @keyframes ticker {
+    0% { transform: translate3d(80%, 0, 0); }
+    100% { transform: translate3d(-130%, 0, 0); }
+  }
+  .ticker-move {
+    /* Basically move items from right side of screen to left in infinite loop */
+    display: inline-block;
+    white-space: nowrap;
+    padding-right: 100%;
+    -webkit-animation-iteration-count: infinite; 
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-name: ticker;
+    animation-name: ticker;
+    animation-duration: 15s;
+  }
+  .ticker-move:hover{
+    animation-play-state: paused; /* Pause scroll on mouse hover */
+  }
+  
+  /* ITEMS */
+  .ticker-item{
+    display: inline-block; /* Lay items in a horizontal line */
+    padding: 0 2rem;
+  }
+  @media only screen and (max-width: 768px) {
+    .ticker-move { 
+        animation-duration: 20s; 
+    }
+    #features h2 {
+        padding-bottom: 30px;
+    }
+    #features p {
+        padding: 20px;
+        margin: 20px 0; 
+    }
+  }
+
+  /* CONTACTS ---------------------- */
+  #contacts div{
+    margin: 10px 20px;
+  }
+ 
+  .subheader {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .container_form {
+      margin: 0 auto;
+      text-align: center;
+  }
+  input {
+      width: 350px;
+      height: 45px;
+      text-align: center;
+      border: none;
+      border-radius: 3px;
+  }
+  textarea {
+      width: 350px;
+      margin-bottom: 20px;
+      text-align: center;
+      border: none;
+      border-radius: 3px;
+  }
+  .button {
+      margin-bottom: 20px;
+      background-color: #d45b63;
+      color: whitesmoke;
+      border: none;
+      border-radius: 3px;
+      transition: ease-in-out 0.3s;
+  }
+  .button:hover {
+      
+      background-color: whitesmoke;
+      color: #d45b63;
+  }
+
+  /* Projects ------------------------------------ */
+  #projects h2 {
+      padding-bottom: 20px;
+  }
+  
+  .project a {
+     color: whitesmoke;
+     text-decoration: none;
+     
+  }
+  .project a p {
+    padding: 10px 0;
+    font-size: 16px;
+    max-width: 400px;
+  }
+  .project a img {
+      max-width: 100%;
+  }
+  .project a img {
+      transition: ease-in-out 0.2s;
+  }
+  .project a img:hover {
+      box-shadow: 7px -10px rgba(0, 128, 128, 0.568);
+      
+  }
+
+/* CLIENTS SAY ---------------------- */
+
+#reviews {
+    margin: 50px 20px;
+} 
+#reviews h2 {
+   padding-bottom: 20px;
+}
+
+/* Map ----------------------------------- */
+.Yandexmap {
+    filter: grayscale(90%);
+    border-radius: 5px;
+}
+.socials {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+    width: 400px;
+}
+.socials a {
+    color: whitesmoke;
+    transition: 0.3s;
+}
+.socials a:hover {
+    color: #d45b63;
+}
+.company_email {
+    text-align: center;
+}
+.company_email a {
+    text-decoration: none;
+    color: whitesmoke;
+    transition: 0.3s;
+}
+.company_email a:hover {
+    color: #d45b63;
+}
+
+/* FOOTER Information ------------------------ */
+#footer div div a {
+    display: block;
+    text-decoration: none;
+    color: whitesmoke;
+    transition: 0.3s;
+}
+#footer div div a:hover {
+    color: grey;
+}
+#footer .logo {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    
+}
+#footer .logo h2 {
+    display: block; 
+    font-size: 46px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+#footer div p {
+    font-size: 14px;
+    text-align: center;
+}
+
+/*PROJECTS Page ------------------------ */
+#project1 h2 {
+    padding-bottom: 30px;
+}
+#project1 img{
+    max-width: 900px;
+}
+#project1 div div h3 {
+    text-align: center;
+}
+#project1 div div {
+    max-width: 900px;
+    padding: 15px;
+}
+
+    
