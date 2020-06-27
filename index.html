@@ -21,22 +21,12 @@
 
     <!-- Icons -->
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    
     <!--Get your own code at fontawesome.com-->
-    <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    <title>Landing Page</title>
 
-   ym(65196511, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/65196511" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-    <title>Product</title>
+    <!-- Flaticon Icon. Cet more at https://www.flaticon.com/ -->
+    <link rel="icon" href="https://image.flaticon.com/icons/svg/3061/3061341.svg" type="image/icon type">
 </head>
 <body>
     <header>
@@ -139,14 +129,14 @@
             <div>
                 <h2 class="subheader">Contacts</h2>
                 <div class="container_form">
-                   <form action="#" method="POST">
+                   <form action="form-action.php" method="POST">
                     <label for="fname"></label><br>
-                    <input type="text" id="fname" name="fname" placeholder="Your name"><br>
+                    <input type="text" id="fname" name="fname" placeholder="Your name" required><br>
 
                     <label for="email"></label><br>
-                    <input type="email" id="email" name="email" placeholder="Your Email"><br><br>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
 
-                    <textarea name="message" rows="10" cols="30" placeholder="Write Your Message Here"></textarea><br>
+                    <textarea name="message" rows="10" cols="30" placeholder="Write Your Message Here" required></textarea><br>
                     <input class="button" type="submit" value="Submit">
                 </form> 
                 </div>
@@ -157,21 +147,21 @@
             <div>
                 <h2 class="subheader">Our Projects</h2>
                 <div class="row">
-                    <div class="col-sm-4 project">
+                    <div class="col-md-4 project">
                         <a class="imgwrapper" href="project1.html">
                             <img class="img-responsive" src="images/ballpen-blur-close-up-computer-461077 (2).jpg">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. vitae perferendis temporibus aspernatur, inventore modi autem molestias suscipit!</p>
                         </a>
                     </div>
                     <!--  ------------------------>
-                    <div class="col-sm-4 project">
+                    <div class="col-md-4 project">
                         <a class="imgwrapper" href="#">
                             <img class="img-responsive" src="images/three-white-ceramic-pots-with-green-leaf-plants-near-open-796602.jpg">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel pariatur sequi ratione vitae perferendis temporibus aspernatur, inventore modi autem molestias suscipit!</p>
                         </a>
                     </div>
                     <!-- ------------------->
-                    <div class="col-sm-4 project">
+                    <div class="col-md-4 project">
                         <a class="imgwrapper" href="#">
                             <img class="img-responsive" src="images/books-business-computer-connection-459654.jpg">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel pariatur sequi ratione error libero asperiores, aut s aspernatur, inventore modi autem molestias suscipit!</p>
@@ -180,21 +170,21 @@
                 </div>
                 <!-- -------------------------------------------------------------------------->
                 <div class="row">
-                    <div class="col-sm-4 project">
+                    <div class="col-md-4 project">
                         <a class="imgwrapper" href="project1.html">
                             <img class="img-responsive" src="images/arts-build-close-up-commerce-273230.jpg">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. vitae perferendis temporibus aspernatur, inventore modi autem molestias suscipit!</p>
                         </a>
                     </div>
                     <!--  ------------------------>
-                    <div class="col-sm-4 project">
+                    <div class="col-md-4 project">
                         <a class="imgwrapper" href="#">
                             <img class="img-responsive" src="images/black-ball-point-pen-with-brown-spiral-notebook-733852 (1).jpg">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel pariatur sequi ratione vitae perferendis temporibus aspernatur, inventore modi autem molestias suscipit!</p>
                         </a>
                     </div>
                     <!-- ------------------->
-                    <div class="col-sm-4 project">
+                    <div class="col-md-4 project">
                         <a class="imgwrapper" href="#">
                             <img class="img-responsive" src="images/black-laptop-beside-black-computer-mouse-inside-room-669996.jpg">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel pariatur sequi ratione error libero asperiores, aut s aspernatur, inventore modi autem molestias suscipit!</p>
@@ -209,11 +199,41 @@
             <div>
                 <h2 class="subheader">What our Clients Say</h2>
                 <div class="row">
-                    <p class="col-sm-4">" This is your last chance. After this, there is no turning back." - <strong>John Doy</strong></p>
 
-                    <p class="col-sm-4">"You take the blue pill - the story ends, you wake up in your bed and believe whatever you want to believe." - <strong>John Doy</strong></p>
+                    <div class="col-lg-4 client">
+                        <div>
+                            <img src="https://image.flaticon.com/icons/svg/3084/3084325.svg">
+                        </div>
+                        
+                        <div class="jumbotron">
+                            <h3><strong>John Doy</strong></h3>
+                           <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci culpa praesentium nisi odio beatae nulla laborum reprehenderit voluptatibus at minima sint qui dolore quo, tenetur dicta corporis voluptatem consequatur vitae.</p> 
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 client">
+                        <div>
+                            <img src="https://image.flaticon.com/icons/svg/3165/3165144.svg">
+                        </div>
+                        
+                        <div class="jumbotron">
+                            <h3><strong>Matha Johes</strong></h3>
+                           <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci culpa praesentium nisi odio beatae nulla laborum reprehenderit voluptatibus at minima sint qui dolore quo, tenetur dicta corporis voluptatem consequatur vitae.</p> 
+                        </div>
+                    </div>
 
-                    <p class="col-sm-4">"You take the red pill - you stay in Wonderland and I show you how deep the rabbit-hole goes." - <strong>Maria D</strong></p>
+                    <div class="col-lg-4 client">
+                        <div>
+                            <img src="https://image.flaticon.com/icons/svg/1256/1256650.svg">
+                        </div>
+                        
+                        <div class="jumbotron">
+                            <h3><strong>Company Name</strong></h3>
+                           <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci culpa praesentium nisi odio beatae nulla laborum reprehenderit voluptatibus at minima sint qui dolore quo, tenetur dicta corporis voluptatem consequatur vitae.</p> 
+                        </div>
+                    </div>
+        
+                    
                 </div>
                 
             </div>
@@ -242,15 +262,15 @@
 
         <footer id="footer">
         <div class="row">
-            <div class="col-sm-4 logo"><h2>Logo</h2></div>
-            <div class="col-sm-4 footercolumn">
+            <div class="col-lg-4 logo"><h2>Logo</h2></div>
+            <div class="col-lg-4 footercolumn">
                <a href="#menu">Home</a>
                <a href="#welcome_section">About</a>
                <a href="#features">Features</a>
                <a href="#projects">Projects</a>
                <a href="#contactsmap">Contacts</a>
             </div>
-            <div class="col-sm-4 footercolumn">
+            <div class="col-lg-4 footercolumn">
                 <a href="#">Facebook</a>
                 <a href="#">Instagram</a>
                 <a href="#">Twitter</a>
@@ -261,7 +281,7 @@
         </div><br><br>
         <div>
                 <p>
-                    <strong>CompanyName</strong> All Rights Reserved Design created with the help of <a style="color:white;" href="https://www.canva.com/">Canva</a>
+                    <strong>CompanyName</strong> All Rights Reserved Design created with the help of <a style="color:white;" href="https://www.canva.com/">Canva</a>Icons made by <a href="https://www.flaticon.com/authors/freepik">Freepik</a>from <a href="https://www.flaticon.com/">www.flaticon.com"</a>
                 </p>
             </div>
     </footer>
