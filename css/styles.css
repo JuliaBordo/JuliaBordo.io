@@ -262,7 +262,16 @@ h2 {
   #projects h2 {
       padding-bottom: 20px;
   }
-  
+  #projects .col-md-4 {
+      max-width: 100%;
+      margin: 0 auto;
+      text-align: center;
+  }
+  #projects .col-md-4 p {
+    text-align: left;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
   .project a {
      color: whitesmoke;
      text-decoration: none;
@@ -291,6 +300,33 @@ h2 {
 } 
 #reviews h2 {
    padding-bottom: 20px;
+}
+#reviews div div div {
+     text-align: center;
+     
+}
+#reviews .client img {
+    background-color: whitesmoke;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px; 
+    position:relative;
+    top: 40px;
+   
+}
+#reviews div div div .jumbotron{
+    height: 350px;
+    font-weight: 300px;
+    font-size: 16px;
+}
+#reviews div div div h3 {
+    font-size: 20px;
+    text-align: center;
+}
+@media (max-width: 990px){
+    #reviews div div div .jumbotron {
+    height: 250px;
+    }
 }
 
 /* Map ----------------------------------- */
@@ -356,20 +392,41 @@ h2 {
     font-size: 14px;
     text-align: center;
 }
+@media (max-width: 990px){
+    #footer .logo h2 {
+    padding: 30px;
+    }
+    #footer div div {
+        padding-top: 30px;
+        text-align: center;
+    }
+}
+
 
 /*PROJECTS Page ------------------------ */
 #project1 h2 {
     padding-bottom: 30px;
 }
-#project1 img{
-    max-width: 900px;
+
+#project1 div img{
+    text-align: center;
+    max-width: 100%;
+    display: inline-block;
+    
 }
 #project1 div div h3 {
     text-align: center;
+    padding: 30px 15px 15px;
+}
+#project1 div div p {
+    text-align: left;
+   
 }
 #project1 div div {
-    max-width: 900px;
-    padding: 15px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    
 }
 
     
