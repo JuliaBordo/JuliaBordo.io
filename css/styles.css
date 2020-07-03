@@ -3,6 +3,7 @@
 }
 html {
     scroll-behavior: smooth;
+    
   }
 body {
     margin: 0;
@@ -10,6 +11,7 @@ body {
     background-color: #431d8c;
     color: whitesmoke;
     font-size: 18px;
+   
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
@@ -19,7 +21,7 @@ h2 {
     font-size: 30px;
 }
 /* Header */
-#menu {
+#m enu {
     position: fixed;
     top: 0;
     width: 100%;
@@ -70,14 +72,18 @@ h2 {
 }
 
 /* Main elements ------------------------------------------------------------------------------------------------------------------------------------*/
+
 #main_elements div {
     max-width: 1000px;
     margin: 0 auto;
     
+    
 }
+
 
 /* SECTION ----------------------------- */
 /* Welcome Section --------------------------------*/
+
 #welcome_section div {
     padding: 140px 20px 80px;
 }
@@ -154,6 +160,7 @@ h2 {
 /* Clients -------------------------*/
 #clients div {
     padding: 10px 20px;
+    text-align: center;
 }
 #clients h2 {
     text-align: center;
@@ -163,13 +170,13 @@ h2 {
     /* ticker ------------------ */
     /* OUTER CONTAINER */
 .tcontainer {
-    width: 100%;
+    max-width: 100%;
     overflow: hidden; /* Hide scroll bar */
   }
    
   /* MIDDLE CONTAINER */
   .ticker-wrap {
-    box-sizing: content-box;
+    box-sizing: border-box;
     white-space: nowrap;
     width: 100%;
     padding-left: 100%; /* Push contents to right side of screen */
@@ -328,6 +335,18 @@ h2 {
     height: 250px;
     }
 }
+@media (max-width: 620px) {
+    #reviews .client img {
+        width: 60px;
+        height: 60px; 
+        top: 30px;
+    }
+    #reviews div div div h3 {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+}
+
 
 /* Map ----------------------------------- */
 .Yandexmap {
